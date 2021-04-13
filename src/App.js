@@ -4,8 +4,8 @@ import {
   Route,
   Link
 } from "react-router-dom";
-import Home from './components/Home/Home';
-import ServiceFeature from './components/ServiceFeature/ServiceFeature'
+import Home from './components/Home/Home/Home';
+import ServiceFeature from './components/Home/ServiceFeature/ServiceFeature'
 // import Appointment from './components/Appointment/Appointment'
 const App = () => {
   return (
@@ -14,10 +14,10 @@ const App = () => {
         <Route exact path="/">
           <Home />
         </Route>
-         <Route path='/serviceFeature'>
-        <ServiceFeature/>
+        <Route path='/serviceFeature'>
+          <ServiceFeature />
         </Route>
-       {/*  <Route path='/appointment'>
+        {/*  <Route path='/appointment'>
         <Appointment/>
         </Route> */}
       </Switch>
